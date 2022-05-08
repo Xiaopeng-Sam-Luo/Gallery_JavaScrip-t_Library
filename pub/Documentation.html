@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Documentation page for javascript library Gallery.js</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="Documentation.css">
+
+    </head>
+
+    <body>
+        <div class="contentcontainer">
+            <div class="header">
+                <a href="landing_page.html">Homepage</a>
+                <a href="examples.html">Examples</a>
+            </div>
+            <div class="title">
+                <h1>Documentation of the JavaScript Library Gallery.js</h1>
+            </div>
+
+            <div class = 'steps'>
+                <h2>Goal</h2>
+                <p>Select the div in which you  want to put the gallery in. </p>
+            </div>
+
+            <div class = 'steps'>
+                <h2>Installation</h2>
+                <div class="code">
+                    <p>&lt;script defer type="text/javascript" src='Gallery.js'&gt;</p>
+                </div>  
+                <p>Deveopers can install this library by including the above script ton to the html page </p>
+            </div>
+
+            <div class="title">
+                <h1>API</h1>
+            </div>
+
+            <div class = 'steps'>
+                <h1>selector</h1>
+                <h2 >Default: /</h2>
+                <h2>Type: String</h2>
+                <p>Description: A string that represents the id of certain elemnet(such as div) 
+                    in the HTML file. It will be used to find the corresponding HTMLElement 
+                    via document.querySelector </p>
+            </div>
+
+            <div class = 'steps'>
+                <h1>elemnet</h1>
+                <h2 >Default: /</h2>
+                <h2>Type: HTML Element</h2>
+                <p>Description: The search result of document.querySelector(selector). The result represents
+                    a div HTML Element, which the developers wants to apply some functionalities from this library. 
+                </p>
+            </div>
+
+            <div class = 'steps'>
+                <h1>holders</h1>
+                <h2 >Default: [ ](empty array)</h2>
+                <h2>Type: array</h2>
+                <p>Description: holders is the array that repersetn the order of the list of images that is currently displayed. 
+                    If the holders array at certain index is null then, it means that position currently has no image. Whenever a 
+                    new image holder is created, the length of this array would increase one
+                </p>
+            </div>
+
+            <div class = 'steps'>
+                <h1>slides</h1>
+                <h2 >Default: [ ](empty array)</h2>
+                <h2>Type: array</h2>
+                <p>Description: slides is the array that repersetn the order of the list of images that is currently displayed in the image slider. 
+                    If certain index of slides array is null then, it means that position currently has no image. Whenever a 
+                    new image slider is created, the length of this array would increase one.
+                </p>
+            </div>
+
+            <div class = 'steps'>
+                <h1></h1>
+                <h2 >Default: [ ](empty array)</h2>
+                <h2>Type: array</h2>
+                <p>Description: slides is the array that repersetn the order of the list of images that is currently displayed in the image slider. 
+                    If certain index of slides array is null then, it means that position currently has no image. Whenever a 
+                    new image slider is created, the length of this array would increase one.
+                </p>
+            </div>
+
+            <div class="title">
+                <h1>Gallery.makeholders</h1>
+                <p>Use to control the number of imageholders that is created.
+                </p>
+            </div>
+
+            <div class = 'steps'>
+                <h1>num</h1>
+                <h2 >Default:/</h2>
+                <h2>Type: number</h2>
+                <p>Description: This function is used to craete multiple image holders at once, the num input paramater represetns the number of image horlders,
+                    the developers wants to add to this list. The input parameter num is required otherwise, this funciton would not execute.
+                </p>
+            </div>
+
+            <div class="title">
+                <h1>Gallery.changesize(index, stylesheet)</h1>
+                <p>Use to overwrite the style of the imageholder at the given index
+                </p>
+            </div>
+
+            <div class = 'steps'>
+                <h1>index</h1>
+                <h2 >Default:/</h2>
+                <h2>Type: number</h2>
+                <p>Description: This input parameter index represerns the index of the holders array. 
+                </p>
+            </div>
+
+            <div class = 'steps'>
+                <h1>stylesheet</h1>
+                <h2 >Default:""</h2>
+                <h2>Type: String</h2>
+                <p>Description: This input parameter stylesheet represerns the style that the develpoers wants to overwirte
+                    the original style of the image holder. 
+                </p>
+            </div>
+
+            <div class="title">
+                <h1>Gallery.drag & Gallery.order</h1>
+                <p>Give access to HTMLElement object to be draggable and reoderable
+                </p>
+            </div>
+
+            <div class = 'steps'>
+                <h1>drag</h1>
+                <h2 >Default:false</h2>
+                <h2>Type: function</h2>
+                <p>Description: Trigger when develpoers wants to make HTMLElement draggable 
+                </p>
+            </div>
+
+            <div class = 'steps'>
+                <h1>order</h1>
+                <h2 >Default:false</h2>
+                <h2>Type: function</h2>
+                <p>Description: Trigger when develpoers wants to make HTMLElement reorderable. Once is triggered 
+                </p>
+            </div>
+
+            <div class="title">
+                <h1>Gallery.insertimages(index, url)</h1>
+                <p>Allow developers to insert images to the corresponding image holder. If there is already a image, the new image
+                    will replace the older one.
+                </p>
+            </div>
+
+            <div class = 'steps'>
+                <h1>index</h1>
+                <h2 >Default:/</h2>
+                <h2>Type: number</h2>
+                <p>Description: This input parameter index represerns the index of the holders array. 
+                </p>
+            </div>
+
+            <div class = 'steps'>
+                <h1>URL</h1>
+                <h2 >Default:/</h2>
+                <h2>Type: String</h2>
+                <p>Description: This input parameter URL represerns the address of the image which the developers wants to put
+                    on the corresponding imageholder. 
+                </p>
+            </div>
+
+            <div class="title">
+                <h1>Gallery.show</h1>
+                <p>Create animation for image slider
+                </p>
+            </div>
+
+            <div class="title">
+                <h1>Gallery.makeslider(name)</h1>
+                <p>Allow developers to create image slider with a class name of their desgin, so that they can manipulate the style of each slider.
+                </p>
+            </div>
+
+            <div class = 'steps'>
+                <h1>name</h1>
+                <h2 >Default:/</h2>
+                <h2>Type: String</h2>
+                <p>Description: This input parameter name represerns the class name which developers wants to name those sliders.. 
+                </p>
+            </div>
+
+            <div class="title">
+                <h1>Gallery.insertslideimages(index, URL)</h1>
+                <p>Allow developers to insert images to the corresponding image slide holder. If there is already a image, the new image
+                    will replace the older one.
+                </p>
+            </div>
+
+            <div class = 'steps'>
+                <h1>index</h1>
+                <h2 >Default:/</h2>
+                <h2>Type: number</h2>
+                <p>Description: This input parameter index represerns the index of the slides array. 
+                </p>
+            </div>
+
+            <div class = 'steps'>
+                <h1>URL</h1>
+                <h2 >Default:/</h2>
+                <h2>Type: String</h2>
+                <p>Description: This input parameter URL represerns the address of the image which the developers wants to put
+                    on the corresponding image slides. 
+                </p>
+            </div>
+
+            <div class="title">
+                <h1>Gallery.pixelRainEffect(height, width, sp, index, method, path)</h1>
+                <p>Create pixel rain effect to the choose image.
+                </p>
+            </div>
+
+            <div class = 'steps'>
+                <h1>height</h1>
+                <h2 >Default:/</h2>
+                <h2>Type: number</h2>
+                <p>Description: This input parameter height represents the height of the HTMLElement of the animated image
+            </div>
+
+            <div class = 'steps'>
+                <h1>width</h1>
+                <h2 >Default:/</h2>
+                <h2>Type: number</h2>
+                <p>Description: This input parameter width represents the width of the HTMLElement of the animated image
+            </div>
+
+            <div class = 'steps'>
+                <h1>sp</h1>
+                <h2 >Default:0.5</h2>
+                <h2>Type: number</h2>
+                <p>Description: This input parameter sp represents the velocity of each moving partical,
+                    the larger the faster the velocity. Default veloctiy is 0.5
+            </div>
+
+            <div class = 'steps'>
+                <h1>index</h1>
+                <h2 >Default:0</h2>
+                <h2>Type: number</h2>
+                <p>Description: can only be chose from 0 or 1. 0 means only white particals and 1 means particals
+                    with the color from the origianl image
+            </div>
+
+            <div class = 'steps'>
+                <h1>method</h1>
+                <h2 >Default:0</h2>
+                <h2>Type: number</h2>
+                <p>Description: can only be chose from 0 or 1. 0 means particals move from top to botton and 1 means particals
+                    move diagonally from top-left to botton-right
+            </div>
+
+            <div class = 'steps'>
+                <h1>path</h1>
+                <h2 >Default:/</h2>
+                <h2>Type: String</h2>
+                <p>Description: Path represents the url of the image which developers wants to aplly pixel rain effect on
+                    in the form of base64. Developers must convert to base64 in advance for this animation to work.
+            </div>
+
+        </div>
+    </body>

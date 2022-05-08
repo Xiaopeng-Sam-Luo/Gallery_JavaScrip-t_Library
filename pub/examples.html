@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Javascript library Testing Page</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="examples_style.css">
+        <script defer type="text/javascript" src="Gallery.js"></script>
+        <script defer type="text/javascript" src="example.js"></script>
+
+    </head>
+    <body>
+        <div class="contentcontainer">
+            <div class="header">
+                <a href="landing_page.html">Homepage</a>
+                <a href="Documentation.html">Documentation</a>
+            </div>
+            <div class="title">
+                <h1>Example of some functionalities</h1>
+            </div>
+            <div class = 'div2'>
+                <h2>Basic dragging and reordering functionality</h2>
+                <p>Put image ay any order by dragging images to the postion where you want them to be. </p>
+                <p>View image in fullscreen by clicking on it</p>
+                <div id="myId" class="div1"></div>
+            </div>
+
+            <div class = 'div23'>
+                <h2>Create Gallery</h2>
+            </div>
+
+            <div class = 'steps'>
+                <h2>Step1</h2>
+                <p>Select the div in which you  want to put the gallery in. </p>
+                <div class="code">
+                    <p>&lt;div id='myId1'&gt; &lt;/div&gt;</p>
+                </div>
+            </div>
+
+            <div class = 'steps'>
+                <h2>Step2</h2>
+                <p>Decide the number of images you want to list in the gallery. </p>
+                <div class="code">
+                    <p>const test = gallery('#myId')</p>
+                    <p>test.makeholders(4)</p>
+                </div>
+                <p>You just create a gallery with four empty position</p>
+            </div>
+
+            <div class = 'div2'>
+                <div id="myId8" class="div1"></div>
+            </div>
+
+            <div class = 'steps'>
+                <h2>Step3</h2>
+                <p>Add images to the gallery </p>
+                <div class="code">
+                    <p>test.insertimages(i, url)</p>
+                </div>
+                <p>Where i is the index of the gallery positoin and url is the address of the image you want to upload</p>
+                <p>If the postion you choice already has a image, then the bew image would replace the old iamge</p>
+                <p>After insertion each image can be view in fullscreen by clicking on it.</p>
+                <p>The gallery looks like the following:</p>
+            </div>
+
+            <div class = 'div2'>
+                <div id="myId9" class="div1"></div>
+            </div>
+
+            <div class = 'steps'>
+                <h2>Drag, reorder $ resize</h2>
+                <p>You can allow interaction such as drag and rezise with imges by doing the following: </p>
+                <div class="code">
+                    <p>test.drag()</p>
+                    <p>test.order()</p>
+                    <p>test.changesize(0, 'width:20px')</p>
+                </div>
+                <p>After all above procedures you get yourself a intreactable art gallery !</p>
+            </div>
+
+            <div class = 'div2'>
+                <h2>Autoplay image slider</h2>
+                <p>Autoplay image silders can be used for displaying different images once at a time.</p>
+                <div id="myId2" class="slides"></div>
+            </div>
+
+            <div class = 'div2'>
+                <h2>Pixel rain animation(white color only)</h2>
+                <p>Apply pixel rain animation to the selected image with a custome velocity and direction.</p>
+                <div class="div4">
+                    <div id="myId3"></div>
+                    <div id="myId4"></div>
+                </div>
+            </div>
+
+            <div class = 'div2'>
+                <h2>Pixel rain animation(white its original color)</h2>
+                <p>Apply pixel rain animation with its original color to the selected image with a custome velocity and direction.</p>
+                <div class="div5">
+                    <div id="myId5"></div>
+                    <div id="myId6"></div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>

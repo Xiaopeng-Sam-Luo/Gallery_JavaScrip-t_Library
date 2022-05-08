@@ -1,0 +1,92 @@
+a{
+    color:aliceblue;
+}
+
+p {
+    color: black;
+}
+
+h1{
+    font-size: 30px;
+    color:rgb(19, 17, 17);
+}
+
+h2{
+    font-size: 20px;
+    color:rgb(19, 17, 17);
+}
+
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+.div2{
+    background-color: rgb(245, 242, 240);
+    margin: auto;
+    width: 1200px;
+    max-width: 100%;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+
+.contentcontainer{
+    height: 100%;   
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.title {
+    background-color: white;
+    margin: auto;
+    width: 1200px;
+    max-width: 100%;
+
+}
+
+.steps{
+    background-color: rgb(245, 242, 240);
+    margin: auto;
+    width: 1200px;
+    max-width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.steps h2{
+    font-size: 15px;
+}
+
+.steps h1{
+    font-size: 30px;
+    color:rgb(19, 17, 17);
+}
+
+.code{
+    font-size: 1.2rem;
+    font-family: courier, courier new, serif;
+    color: whitesmoke;
+    background-color: black;
+    margin-bottom: 20px;
+    padding: 2px;
+}
+
+.code p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: whitesmoke;
+}
+
+.header {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(180, 177, 177);
+    display: flex;
+}

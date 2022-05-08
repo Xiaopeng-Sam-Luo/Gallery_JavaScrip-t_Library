@@ -1,0 +1,39 @@
+a{
+    color:aliceblue;
+}
+
+h1{
+    font-size: 120px;
+    color: aliceblue;
+}
+
+p{
+    font-size: 12px;
+    color: aliceblue;
+}
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+
+.contentcontainer{
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+}
+
+.contentcontainer .title{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    height: 300px;
+    text-align: center;
+}
+
+.contentcontainer .title .p{
+    font-size: 12px;
+}
+
