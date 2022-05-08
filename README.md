@@ -1,4 +1,4 @@
-# js-library-luoxia17
+# JavaScript Library
 Link to the landing page https://desolate-tor-02612.herokuapp.com/landing_page.html
 Link to the documentation page https://desolate-tor-02612.herokuapp.com/Documentation.html
 Documentation can also be directed by navigating from the landing page
